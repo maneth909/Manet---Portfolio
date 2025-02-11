@@ -1,6 +1,5 @@
-/* Basic reset *
-* {
-  margin: 0;
+body {
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -52,4 +51,55 @@ nav ul li a:hover {
 .content {
   padding: 20px;
   height: 2000px; /* Just for demonstration purposes to enable scrolling */
+}
+
+main {
+  margin: 0 20%;
+}
+
+footer {
+  bottom: 0;
+  margin-top: 100px;
+  left: 0;
+  width: 100%;
+  text-align: center; /* Center the text horizontally */
+  background-color: #f8f9fa; /* Optional: Add a background color */
+  padding: 10px 0; /* Optional: Add some padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+article,
+article * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Add some spacing between articles if needed */
+article {
+  margin-bottom: 0.5em; /* No margin between articles */
+  padding: 10px 0; /* Optional: Add padding inside each article */
+}
+
+article ul {
+  padding: 0 30px; /* Add padding inside each article */
+}
+
+.skills h4,
+.skills progress,
+.skills p {
+  margin: 0;
+}
+
+.skills {
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.indentation {
+  margin-left: 2.5em;
+  margin-bottom: 2em;
 }
