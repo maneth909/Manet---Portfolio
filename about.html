@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Hoeurn Manet, Software Development, Portfolio, Projects, Skills, Education, Certification, Work Experience, Achievements, Awards"
+    />
     <title>Portfolio :: About Me</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
-        <ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="project.html">Projects</a></li>
@@ -35,46 +57,72 @@
 
     <!-- Main Content -->
     <main>
-      <h1>About Me</h1>
-      <section>
-        <p>
+      <div class="center content margin blue-text">
+        <h1>About Me</h1>
+      </div>
+      <section class="content">
+        <p class="new-paragraph">
           I was born in a remote area but qualified enough to be selected to
           attend a Singaporean-based curriculum high school, which was seen as
           one of the best high schools in Cambodia at that time. During my three
-          years in high school, I was recognized as an outstanding student and
-          was awarded as one of the overall top scorers every year.
+          years in this high school, I was recognized as an outstanding student
+          and was awarded as one of the overall top scorers every year.
         </p>
-        <p>
+        <p class="new-paragraph">
           Besides excellent academic performance, I was eager to go beyond the
           classroom, participating in extracurricular activities, working on
-          projects, and joining competitions.
+          projects, and joining competitions. After high school graduation,
+          while most students went straight to university, I took a 6-month
+          break. During that time, my friends and I launched a startup aimed at
+          helping university students find paid internships for free. It still
+          operates today.
         </p>
-        <p>
-          After high school graduation, while most students went straight to
-          university, I took a 6-month break. During that time, my friends and I
-          launched a startup aimed at helping university students find paid
-          internships for free. It still operates today.
-        </p>
-        <p>
+
+        <p class="new-paragraph">
           As time passed, I grew personally and professionally, meeting
           countless people, facing challenges, and witnessing various situations
           around me. In my 20s, I began to realize the core values I hold onto:
         </p>
-        <ul>
-          <li>
-            <strong>Integrity:</strong> Being ethical and using my knowledge in
-            the right way.
-          </li>
-          <li>
-            <strong>Responsibility:</strong> Committing to my work and accepting
-            the consequences of my actions.
-          </li>
-          <li>
-            <strong>Contribution:</strong> Passionate about giving back to the
-            community and helping others.
-          </li>
-        </ul>
-        <p>
+
+        <section class="core-value-section">
+          <div class="row-item">
+            <div class="item-des">
+              <img
+                src="asset/integrity.png"
+                alt="Image 1"
+                class="rounded-image"
+              />
+              <p class="description">
+                <strong>Integrity:</strong> Being ethical and using my knowledge
+                in the right way.
+              </p>
+            </div>
+            <div class="item-des">
+              <img
+                src="asset/responsibility.png"
+                alt="Image 2"
+                class="rounded-image"
+              />
+              <p class="description">
+                <strong>Responsibility:</strong> Committing to my work and
+                accepting the consequences of my actions.
+              </p>
+            </div>
+            <div class="item-des">
+              <img
+                src="asset/contribution.png"
+                alt="Image 3"
+                class="rounded-image"
+              />
+              <p class="description">
+                <strong>Contribution:</strong> Passionate about giving back to
+                the community and helping others.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <p class="new-paragraph">
           In the future, I want to become a full-stack web developer, bringing
           meaningful technology and solutions to address problems in Cambodia.
           While I am still exploring which industry to focus on, one thing
@@ -85,16 +133,45 @@
 
     <!-- Footer -->
     <footer>
-      <small>
-        <p>
-          <em>
-            <a href="mailto:hoeunmaneth09@gmail.com">hoeunmaneth09@gmail.com</a>
-            <br />
-            +855 85 360 764<br />
-            Copyright &copy; 2025 Hoeurn Manet. All rights reserved.
-          </em>
-        </p>
-      </small>
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/manet-hoeurn09/" target="_blank">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTS6U5HZV0Wi6r47ew8lqbZ2-WQY3o-IRSI2QIzMeeO1BUhd8Op6EzBWnrQWLmYPLI9CQ&usqp=CAU"
+              alt="LinkedIn"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/maneth909" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://t.me/manet_hoeurn" target="_blank">
+            <img
+              src="https://img.icons8.com/ios_filled/512/telegram.png"
+              alt="Telegram"
+              class="icon"
+            />
+          </a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="phone-number">
+          <p>Phnom Penh | +855 85 360 764</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <small
+            >Copyright &copy; 2025 Hoeurn Manet. All rights reserved.</small
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

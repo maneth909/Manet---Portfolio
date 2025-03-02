@@ -13,12 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
-        <ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="project.html">Projects</a></li>
@@ -40,23 +57,25 @@
 
     <!-- Main Body -->
     <main>
-      <h1>Hoeurn Manet</h1>
-      <h2>Software Development Student</h2>
+      <section class="hero">
+        <h1>Hoeurn Manet</h1>
+        <h2 class="text-box">Software Development Student</h2>
+      </section>
 
-      <section>
-        <p>
+      <section class="content">
+        <p class="new-paragraph">
           Hi👋, I am <strong>Hoeurn Manet</strong>, a sophomore majoring in
           <strong>Software Development</strong> at the
           <strong>American University of Phnom Penh</strong>.
         </p>
-        <p>
+        <p class="new-paragraph">
           I am an enthusiastic, self-motivated, and independent learner who
           eagerly seeks opportunities to unlock my full potential. With a solid
           passion to grow, I have dedicated my time and efforts to obtain a
           diverse range of <strong>technical and soft skills</strong> through
           engagement in various projects, competitions, and volunteer programs.
         </p>
-        <p>
+        <p class="new-paragraph">
           My most remarkable achievement was securing
           <strong>second place</strong> in an international competition called
           the <strong>11th e-ICON World Contest</strong>, organized by the
@@ -64,7 +83,7 @@
           then, I have involved myself more in extracurricular activities, which
           marked a turning point in my life.
         </p>
-        <p>
+        <p class="new-paragraph">
           I strongly hope that this portfolio will serve as a place where
           recruiters and others can dive deep to understand my background and
           accomplishments.
@@ -74,16 +93,45 @@
 
     <!-- Footer -->
     <footer>
-      <small>
-        <p>
-          <em>
-            <a href="mailto:hoeunmaneth09@gmail.com">hoeunmaneth09@gmail.com</a>
-            <br />
-            +855 85 360 764<br />
-            Copyright &copy; 2025 Hoeurn Manet. All rights reserved.
-          </em>
-        </p>
-      </small>
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/manet-hoeurn09/" target="_blank">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTS6U5HZV0Wi6r47ew8lqbZ2-WQY3o-IRSI2QIzMeeO1BUhd8Op6EzBWnrQWLmYPLI9CQ&usqp=CAU"
+              alt="LinkedIn"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/maneth909" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://t.me/manet_hoeurn" target="_blank">
+            <img
+              src="https://img.icons8.com/ios_filled/512/telegram.png"
+              alt="Telegram"
+              class="icon"
+            />
+          </a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="phone-number">
+          <p>Phnom Penh | +855 85 360 764</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <small
+            >Copyright &copy; 2025 Hoeurn Manet. All rights reserved.</small
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

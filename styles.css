@@ -1,8 +1,32 @@
-body {
-  margin: 0px;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: #0537ff;
+  --dark-grey: #1c1c1c;
+  --ligth-grey: #efefef;
+  --white: #ffffff;
+  --font: "Lato", "Poppins", sans-serif;
+  --style-font: "Audiowide", cursive, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-grey);
 }
 
 header {
@@ -14,84 +38,295 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Bar Styling */
 nav {
   display: flex;
-  justify-content: center;
-  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-nav ul {
+/* Navigation Links */
+nav ul.nav-links {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
-nav ul li {
+nav ul.nav-links li {
   margin: 0 15px;
 }
 
-nav ul li a {
+nav ul.nav-links li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font);
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul.nav-links li a:hover {
   color: #007bff;
 }
 
-.content {
-  padding: 20px;
-  height: 2000px;
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-main {
-  margin: 0 20%;
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: transform 0.3s ease;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hide Navigation Links by Default */
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show Navigation Links When Active */
+  nav ul.nav-links.active {
+    display: flex;
+  }
+
+  /* Show Hamburger Menu Icon */
+  .menu-icon {
+    display: flex;
+  }
+
+  /* Adjust Link Styling for Mobile */
+  nav ul.nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* General Footer Styling */
 footer {
-  bottom: 0;
-  margin-top: 100px;
+  margin-top: 5rem;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px 0;
+  text-align: center; /* Center align all content */
+  font-family: var(--font);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Phone Number */
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between phone icon and number */
+  margin-bottom: 10px;
+}
+
+.phone-number img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.9em;
+  color: #6c757d; /* Gray text for copyright */
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  color: white; /* Text color */
+  overflow: hidden; /* Prevent background image overflow */
+  padding-top: 80px; /* Adjust this value based on the height of your menu bar */
+}
+
+/* Background Image */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  text-align: center; /* Center the text horizontally */
-  background-color: #f8f9fa; /* Optional: Add a background color */
-  padding: 10px 0; /* Optional: Add some padding */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  height: 100%;
+  background-image: url("asset/profile.png"); /* Replace with your image URL */
+  background-size: 50% auto;
+  background-position: center top; /* Adjusted to ensure the top of the image is visible */
+  /* filter: brightness(0.6); Darken the image slightly */
+  background-repeat: no-repeat;
+  z-index: -1; /* Place behind the content */
 }
 
-article,
-article * {
-  margin: 0;
-  padding: 0;
+.hero h1 {
+  margin-top: 2em;
+  font-size: 6rem; /* Large font size */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional: Uppercase text */
+  letter-spacing: 2px; /* Add spacing between letters */
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+  font-family: var(--style-font);
 }
 
-article {
-  margin-bottom: 0.5em;
-  padding: 10px 0;
+.text-box {
+  background-color: var(--blue); /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Space inside the box */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 1.2rem; /* Font size for the title */
+  font-family: var(--font);
+  font-weight: 500; /* Slightly bold text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  display: inline-block; /* Ensures the box wraps only around the text */
 }
 
-article ul {
-  padding: 0 30px;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.skills h4,
-.skills progress,
-.skills p {
-  margin: 0;
+.text-center {
+  text-align: center;
 }
 
-.skills {
-  margin-bottom: 25px;
-  margin-left: 20px;
+.content {
+  max-width: 70%; /* Limits the width of the content */
+  margin-left: 15%; /* Adds a left margin */
+  margin-right: 15%; /* Adds a right margin */
 }
 
-.no-margin {
-  margin: 0;
+.margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.indentation {
-  margin-left: 2.5em;
-  margin-bottom: 2em;
+.blue-text {
+  color: var(--blue);
+}
+
+.new-paragraph {
+  text-indent: 40px; /* Indents the first line of the paragraph */
+  margin-top: 15px; /* Adds space above the paragraph */
+  margin-bottom: 10px; /* Adds space below the paragraph */
+  line-height: 1.6; /* Improves readability by increasing line spacing */
+  font-family: var(--font); /* Sets a clean font */
+  font-size: 1rem; /* Sets a standard font size */
+  color: #333; /* Sets a dark gray text color for better contrast */
+}
+
+/* Section Styling */
+.core-value-section {
+  display: flex;
+  justify-content: flex-end; /* Align the container to the right */
+  padding: 20px; /* Add some padding around the section */
+}
+
+/* Container Styling */
+.row-item {
+  display: flex; /* Use Flexbox to align items horizontally */
+  gap: 20px; /* Add space between image items */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Image Item Styling */
+.item-des {
+  display: flex;
+  flex-direction: column; /* Stack image and description vertically */
+  align-items: center; /* Center-align image and description */
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Image Styling */
+.rounded-image {
+  width: 100px; /* Set a fixed width for the images */
+  height: 100px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure images maintain aspect ratio and fill the space */
+  border-radius: 20px; /* Make the images circular */
+  background-color: var(--ligth-grey);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.6rem;
+}
+
+/* Description Styling */
+.description {
+  margin-top: 10px; /* Add spacing between the image and description */
+  font-size: 0.9rem; /* Adjust font size for readability */
+  color: var(--dark-grey); /* Set text color */
+  line-height: 1.4; /* Improve readability with line spacing */
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+a,
+button {
+  transition: all 0.3s ease;
 }
