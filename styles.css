@@ -421,25 +421,102 @@ progress::-webkit-progress-value {
   margin: 0.7rem;
 }
 
-input,
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+.contact-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Stretch children to fill the container width */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #292c30;
+.contact-container {
+  width: 20%; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Stretch children to fill the container width */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 1rem; /* Add padding inside the container */
+}
+
+.contact-item {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Vertically center the icon and text */
+  gap: 10px; /* Space between the icon and text */
+  padding: 10px; /* Add padding around each item */
+  text-decoration: none; /* Remove underline from links */
+  color: var(--dark-grey); /* Set text color */
+  font-size: 1rem; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-item:hover {
+  background-color: var(--ligth-grey); /* Change background color on hover */
+  color: var(--blue); /* Change text color on hover */
+  text-decoration: none;
+}
+
+.contact-item span {
+  font-family: var(--font); /* Use the defined font */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Contact Form Container */
+.contact-form-container {
+  width: 50%;
+  max-width: 600px; /* Limit the width for better readability */
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--blue);
   outline: none;
 }
 
-a,
-button {
-  transition: all 0.3s ease;
+/* Submit Button */
+.contact-form .button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .button:hover {
+  background: linear-gradient(to right, #0537ff, #44a1c5);
 }
