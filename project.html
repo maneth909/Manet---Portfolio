@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Portfolio :: Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Hoeurn Manet, Software Development, Portfolio, Projects, Skills, Education, Certification, Work Experience, Achievements, Awards"
+    />
+    <title>Portfolio :: Projecct</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
-        <ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="project.html">Projects</a></li>
@@ -35,151 +57,218 @@
 
     <!-- Main Content -->
     <main>
-      <h1>Projects</h1>
-      <p>
+      <h1 class="content center margin-top blue-text">Projects</h1>
+      <p class="content center margin-bottom">
         Throughout my academic journey and various competitions, I have worked
         on several programming projects.
       </p>
 
-      <!-- Mobile App -->
-      <article>
-        <h3>Mobile App for SDG Awareness</h3>
-        <p>
-          A mobile application aimed at spreading awareness about Sustainable
-          Development Goals (SDGs) among users.
-        </p>
-        <ul>
-          <li><strong>Technologies Used:</strong> Flutter</li>
-          <li>
-            <strong>Challenges:</strong> It was a bit difficult to make a fluid
-            layout but consulting with the documentation helped.
-          </li>
-          <li>
-            <strong>Achievement:</strong> This project was developed for a
-            mobile app Korean competition in 2021, and was awarded as a
-            runner-up.
-          </li>
-        </ul>
-      </article>
+      <section class="row-item content margin-top">
+        <!-- Mobile App for SDG Awareness -->
+        <div class="each-item-bg">
+          <div class="image-container">
+            <img
+              src="asset/change.png"
+              alt="Image 1"
+              class="big-rounded-image"
+            />
+          </div>
+          <div class="content-container">
+            <h2 class="center">Mobile App for SDG Awareness</h2>
+            <p class="new-paragraph">
+              A mobile application aimed at spreading awareness about
+              Sustainable Development Goals (SDGs) among users.
+            </p>
+            <ul class="bullet-point margin-bottom">
+              <li><strong>Technologies Used:</strong> Flutter</li>
+              <li>
+                <strong>Challenges:</strong> It was a bit difficult to make a
+                fluid layout but consulting with the documentation helped.
+              </li>
+              <li>
+                <strong>Achievement:</strong> This project was developed for a
+                mobile app Korean competition in 2021, and was awarded as a
+                runner-up.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/maneth909/e2nergy"
+              target="_blank"
+              class="button"
+              >Github</a
+            >
+          </div>
+        </div>
 
-      <!-- CV Generator -->
-      <article>
-        <h3>CV Generator</h3>
-        <p>
-          A platform where users can input information and generate a digital CV
-          in PDF format.
-        </p>
-        <ul>
-          <li>
-            <strong>Project Link:</strong>
+        <!-- CV generator -->
+        <div class="each-item-bg">
+          <div class="image-container">
+            <img
+              src="asset/cv-gen.png"
+              alt="Image 1"
+              class="big-rounded-image"
+            />
+          </div>
+          <div class="content-container">
+            <h2 class="center">CV Generator</h2>
+            <p class="new-paragraph">
+              A platform where users can input information and generate a
+              digital CV in PDF format.
+            </p>
+            <ul class="bullet-point margin-bottom">
+              <li>
+                <strong>Technologies Used:</strong> Python (Django), HTML, CSS,
+                JavaScript
+              </li>
+              <li>
+                <strong>Challenges:</strong> It took a bit too much time to
+                create a template of the CV.
+              </li>
+            </ul>
             <a
               href="https://github.com/maneth909/cv_generator"
               target="_blank"
-              rel="noopener noreferrer"
-              >GitHub Repository</a
+              class="button"
+              >Github</a
             >
-          </li>
-          <li>
-            <strong>Technologies Used:</strong> Python (Django), HTML, CSS,
-            JavaScript
-          </li>
-          <li>
-            <strong>Challenges:</strong> It take a bit too much time to create a
-            template of the CV.
-          </li>
-        </ul>
-      </article>
+          </div>
+        </div>
+      </section>
 
-      <!-- YouTube Downloader -->
-      <article>
-        <h3>YouTube MP3 & MP4 Downloader</h3>
-        <p>
-          A web tool where users can download mp3 and/or mp4 by pasting Youtube
-          URL.
-        </p>
-        <ul>
-          <li>
-            <strong>Project Link:</strong>
+      <section class="row-item content margin-top">
+        <!-- YouTube Downloader -->
+        <div class="each-item-bg">
+          <div class="image-container">
+            <img
+              src="asset/youtube.png"
+              alt="Image 1"
+              class="big-rounded-image"
+            />
+          </div>
+          <div class="content-container">
+            <h2 class="center">YouTube MP3 & MP4 Downloader</h2>
+            <p class="new-paragraph">
+              A web tool where users can download mp3 and/or mp4 by pasting
+              Youtube URL.
+            </p>
+            <ul class="bullet-point margin-bottom">
+              <li><strong>Technologies Used:</strong> Python (Streamlit)</li>
+              <li>
+                <strong>Challenges:</strong> It was tough to implement download
+                from a playlist link and specify the path to local drive.
+              </li>
+            </ul>
             <a
               href="https://github.com/maneth909/YoutubeDownloader"
               target="_blank"
-              rel="noopener noreferrer"
-              >GitHub Repository</a
+              class="button"
+              >Github</a
             >
-          </li>
-          <li><strong>Technologies Used:</strong> Python (Streamlit)</li>
-          <li>
-            <strong>Challenges:</strong> It was tough to implement download from
-            a playlist link and specify the path to local drive.
-          </li>
-        </ul>
-      </article>
+          </div>
+        </div>
 
-      <!-- Java 2D Game -->
-      <article>
-        <h3>Java 2D Game</h3>
-        <p>
-          A simple 2D game where the player must find a specific item in a
-          forest.
-        </p>
-        <ul>
-          <li>
-            <strong>Project Link:</strong>
+        <!-- Java 2D Game -->
+        <div class="each-item-bg">
+          <div class="image-container">
+            <img
+              src="asset/java-game.png"
+              alt="Image 1"
+              class="big-rounded-image"
+            />
+          </div>
+          <div class="content-container">
+            <h2 class="center">Java 2D Game</h2>
+            <p class="new-paragraph">
+              A simple 2D game where the player must find a specific item in a
+              forest.
+            </p>
+            <ul class="bullet-point margin-bottom">
+              <li><strong>Technologies Used:</strong> Java</li>
+              <li>
+                <strong>Challenges:</strong> The character visual movement was
+                difficult to implement because it involves a loop of different
+                images of the character.
+              </li>
+            </ul>
             <a
               href="https://github.com/maneth909/JavaGame"
               target="_blank"
-              rel="noopener noreferrer"
-              >GitHub Repository</a
+              class="button"
+              >Github</a
             >
-          </li>
-          <li><strong>Technologies Used:</strong> Java</li>
-          <li>
-            <strong>Challenges:</strong> The character visual movement was
-            difficult to implement because it involves a loop of different
-            images of the character.
-          </li>
-        </ul>
-      </article>
+          </div>
+        </div>
+      </section>
 
-      <!-- Reveal.js Presentation -->
-      <article>
-        <h3>Reveal.js Presentation Slide</h3>
-        <p>
-          A fully customized presentation slide built using the Reveal.js HTML
-          framework.
-        </p>
-        <ul>
-          <li>
-            <strong>Project Link:</strong>
-            <a
-              href="https://github.com/maneth909/html-reveal-js"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub Repository</a
-            >
-          </li>
-          <li><strong>Technologies Used:</strong> HTML (Reveal.js), CSS</li>
-          <li>
-            <strong>Challenges:</strong> The challenge was to override some of
-            the existing styles because some of the styles in reveal do not
-            match my preferences
-          </li>
-        </ul>
-      </article>
+      <!-- <section class="content">
+        <article>
+          <h3>Reveal.js Presentation Slide</h3>
+          <p>
+            A fully customized presentation slide built using the Reveal.js HTML
+            framework.
+          </p>
+          <ul>
+            <li>
+              <strong>Project Link:</strong>
+              <a
+                href="https://github.com/maneth909/html-reveal-js"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub Repository</a
+              >
+            </li>
+            <li><strong>Technologies Used:</strong> HTML (Reveal.js), CSS</li>
+            <li>
+              <strong>Challenges:</strong> The challenge was to override some of
+              the existing styles because some of the styles in reveal do not
+              match my preferences
+            </li>
+          </ul>
+        </article>
+      </section> -->
     </main>
 
     <!-- Footer -->
     <footer>
-      <small>
-        <p>
-          <em>
-            <a href="mailto:hoeunmaneth09@gmail.com">hoeunmaneth09@gmail.com</a>
-            <br />
-            +855 85 360 764<br />
-            Copyright &copy; 2025 Hoeurn Manet. All rights reserved.
-          </em>
-        </p>
-      </small>
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/manet-hoeurn09/" target="_blank">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTS6U5HZV0Wi6r47ew8lqbZ2-WQY3o-IRSI2QIzMeeO1BUhd8Op6EzBWnrQWLmYPLI9CQ&usqp=CAU"
+              alt="LinkedIn"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/maneth909" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://t.me/manet_hoeurn" target="_blank">
+            <img
+              src="https://img.icons8.com/ios_filled/512/telegram.png"
+              alt="Telegram"
+              class="icon"
+            />
+          </a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="phone-number">
+          <p>Phnom Penh | +855 85 360 764</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <small
+            >Copyright &copy; 2025 Hoeurn Manet. All rights reserved.</small
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

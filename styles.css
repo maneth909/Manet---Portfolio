@@ -245,8 +245,17 @@ img {
 
 .margin {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -277,12 +286,13 @@ img {
 /* Container Styling */
 .row-item {
   display: flex; /* Use Flexbox to align items horizontally */
-  gap: 20px; /* Add space between image items */
+  gap: 2rem; /* Add space between image items */
   align-items: flex-start; /* Align items at the top */
+  justify-content: center; /* Center items horizontally */
 }
 
 /* Image Item Styling */
-.item-des {
+.each-item {
   display: flex;
   flex-direction: column; /* Stack image and description vertically */
   align-items: center; /* Center-align image and description */
@@ -300,12 +310,87 @@ img {
   padding: 0.6rem;
 }
 
+.each-item-bg {
+  width: 100%; /* Full width of the parent container */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Stretch children to fill the container width */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.image-container {
+  flex: 1; /* Take up 50% of the container height */
+  display: flex; /* Center the image inside this container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 1rem 1rem 1.5rem 1rem; /* Add some spacing around the image */
+  background-color: var(--light-grey); /* Optional: Add a background color */
+}
+
+.big-rounded-image {
+  border-radius: 17px; /* Make the images rounded */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+  filter: brightness(0.4); /* Make the image slightly darker by default */
+}
+
+.big-rounded-image:hover {
+  filter: brightness(1); /* Restore full brightness on hover */
+}
+
+.content-container {
+  flex: 1; /* Take up the remaining 50% of the container height */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content to the top */
+  padding: 0 2em 2em 2em; /* Add spacing around the content */
+  align-items: center;
+}
+
+/* General Button Styling */
+.button {
+  display: inline-flex; /* Ensures the button behaves like an inline element */
+  align-items: center; /* Vertically centers the text inside the button */
+  justify-content: center; /* Horizontally centers the text inside the button */
+  font-size: 1rem; /* Sets the font size */
+  font-weight: bold; /* Makes the text bold */
+  color: var(--dark-grey); /* Sets the text color */
+  background-color: var(--ligth-grey); /* Sets the background color */
+  border: none; /* Removes the default border */
+  border-radius: 5px; /* Adds rounded corners */
+  text-decoration: none; /* Removes the underline from the link */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 0.5em 1em; /* Dynamic padding based on font size */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: var(--blue); /* Darkens the background color on hover */
+  color: white;
+  text-decoration: none;
+}
+
 /* Description Styling */
 .description {
   margin-top: 10px; /* Add spacing between the image and description */
   font-size: 0.9rem; /* Adjust font size for readability */
   color: var(--dark-grey); /* Set text color */
   line-height: 1.4; /* Improve readability with line spacing */
+}
+
+.long-description {
+  margin-top: 10px; /* Add spacing between the image and description */
+  font-size: 0.9rem; /* Adjust font size for readability */
+  color: var(--dark-grey); /* Set text color */
+  line-height: 1.4; /* Improve readability with line spacing */
+}
+
+.bullet-point {
+  margin-left: 2rem;
 }
 
 input,
