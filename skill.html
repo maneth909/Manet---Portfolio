@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Portfolio :: About Me</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Hoeurn Manet, Software Development, Portfolio, Projects, Skills, Education, Certification, Work Experience, Achievements, Awards"
+    />
+    <title>Portfolio :: Skill</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav>
-        <ul>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="project.html">Projects</a></li>
@@ -35,8 +57,8 @@
 
     <!-- main body -->
     <main>
-      <h1>My Skills</h1>
-      <p>
+      <h1 class="content center margin-top blue-text">My Skills</h1>
+      <p class="content center new-paragraph "> 
         From the experience I gain from school, volunteering program and work
         place, I am equipped with a reasonable amount of skills that can
         potentially bring me closer to achieving my goal. Some of my current
@@ -46,8 +68,8 @@
       </p>
 
       <!-- Technical Skills Section -->
-      <section>
-        <h2>Technical Skills</h2>
+      <section class="content">
+        <h2 class="margin-top">Technical Skills</h2>
         <table>
           <tr>
             <td>
@@ -131,8 +153,8 @@
       </section>
 
       <!-- Soft Skills Section -->
-      <section>
-        <h2>Soft Skills</h2>
+      <section class="content">
+        <h2 class="margin-top">Soft Skills</h2>
         <table>
           <tr>
             <td>
@@ -183,16 +205,45 @@
 
     <!-- Footer -->
     <footer>
-      <small>
-        <p>
-          <em>
-            <a href="mailto:hoeunmaneth09@gmail.com">hoeunmaneth09@gmail.com</a>
-            <br />
-            +855 85 360 764<br />
-            Copyright &copy; 2025 Hoeurn Manet. All rights reserved.
-          </em>
-        </p>
-      </small>
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/manet-hoeurn09/" target="_blank">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTS6U5HZV0Wi6r47ew8lqbZ2-WQY3o-IRSI2QIzMeeO1BUhd8Op6EzBWnrQWLmYPLI9CQ&usqp=CAU"
+              alt="LinkedIn"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/maneth909" target="_blank">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://t.me/manet_hoeurn" target="_blank">
+            <img
+              src="https://img.icons8.com/ios_filled/512/telegram.png"
+              alt="Telegram"
+              class="icon"
+            />
+          </a>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="phone-number">
+          <p>Phnom Penh | +855 85 360 764</p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <small
+            >Copyright &copy; 2025 Hoeurn Manet. All rights reserved.</small
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

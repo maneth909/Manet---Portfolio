@@ -268,8 +268,8 @@ img {
 
 .new-paragraph {
   text-indent: 40px; /* Indents the first line of the paragraph */
-  margin-top: 15px; /* Adds space above the paragraph */
-  margin-bottom: 10px; /* Adds space below the paragraph */
+  /* margin-top: 1rem; Adds space above the paragraph */
+  margin-bottom: 1rem; /* Adds space below the paragraph */
   line-height: 1.6; /* Improves readability by increasing line spacing */
   font-family: var(--font); /* Sets a clean font */
   font-size: 1rem; /* Sets a standard font size */
@@ -393,6 +393,34 @@ img {
   margin-left: 2rem;
 }
 
+/* Style the progress bar container */
+progress {
+  width: 100%; /* Set the width of the progress bar */
+  height: 15px; /* Set the height of the progress bar */
+  appearance: none; /* Remove default browser styling */
+  -webkit-appearance: none; /* For Safari */
+}
+
+/* Style the background (track) of the progress bar */
+progress::-webkit-progress-bar {
+  background-color: whitesmoke; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the filled portion of the progress bar */
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, #0537ff, #8adeff);
+  border-radius: 10px; /* Match the track's rounded corners */
+}
+
+.skills {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  margin: 0.7rem;
+}
+
 input,
 textarea,
 select {
@@ -407,7 +435,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #007bff;
+  border-color: #292c30;
   outline: none;
 }
 
