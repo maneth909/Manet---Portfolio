@@ -256,6 +256,10 @@ img {
   margin-top: 4rem;
 }
 
+.small-margin-top {
+  margin-top: 1rem;
+}
+
 .margin-bottom {
   margin-bottom: 1rem;
 }
@@ -562,4 +566,30 @@ progress::-webkit-progress-value {
   font-size: 1rem; /* Set font size */
   border-radius: 5px; /* Add rounded corners */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.work-container {
+  margin: 2rem auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Stretch children to fill the container width */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 1.5rem; /* Add some padding inside the container */
+}
+
+.volunteer-container {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Stretch children to fill the container width */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding: 1.5rem; /* Add some padding inside the container */
 }
